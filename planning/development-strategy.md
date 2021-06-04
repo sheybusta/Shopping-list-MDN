@@ -16,7 +16,7 @@
 3. As an **user-list-maker** I want to delete items to my list.
   
   - [ ] button to delete <button>add items<button/>
-  
+   
 4. As an **user-list-maker** I want to check items as "bought".
 
   - [ ] checkboxes
