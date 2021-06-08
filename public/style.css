@@ -1,12 +1,13 @@
-html {
+* {
     padding: 0;
     margin: 0;
-    background-image: linear-gradient(to bottom, #c6ffdd, #fbd786, #f7797d);
+    /* background-image: linear-gradient(to bottom, #c6ffdd, #fbd786, #f7797d); */
+    /* background-image: linear-gradient(to bottom, #49592C #749D2E, #F7FBEF, #FFFBCE); */
+    
 }
-
 h1 {
-    color: #106B7A;
-    font-family: 'Baloo Tammudu 2';
+    color: #FAF1CA;
+    font-family: 'Baloo Tammudu 2', cursive;
     font-size: 2.5rem;
 }
 
@@ -16,6 +17,9 @@ body {
     align-content: center;
     align-items:center;
     justify-content: center;
+      background: linear-gradient(to bottom, #dce35b, #45b649);
+     /* background-image: linear-gradient(to bottom, #c6ffdd, #fbd786, #f7797d); */
+    /* background-image: linear-gradient(to bottom, #49592C #749D2E, #F7FBEF, #FFFBCE); */
 }
 
 
@@ -35,5 +39,12 @@ body {
 
 .input-container {
    border: 2px solid lawngreen;
+}
+
+.item {
+    background-color: cornsilk;
+    margin: 0.2em 0.5em 0.2em 0.5em;
+    display: flex;
+    flex-direction: raw;
 }
 
