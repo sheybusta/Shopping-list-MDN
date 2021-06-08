@@ -17,9 +17,13 @@ listItem.innerText = inputField.value;
 listItem.classList.add('list-item');
 inputField.value = '';
 itemDiv.appendChild(listItem);
-// inputField.value = '';
 
 //completed button 
+
+const deleteButton = document.createElement('button');
+deleteButton.innerHTML = '<i class = "fas fa-trash"></i>'
+deleteButton.classList.add('delete-button');
+itemDiv.appendChild(deleteButton);
 
 }
 
