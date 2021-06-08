@@ -5,7 +5,7 @@ const header = document.createElement('header');
 document.body.appendChild(header);
 const title = document.createElement('h1');
 header.appendChild(title);
-title.innerText = 'Shopping List';
+title.innerText = 'My Shopping List';
 console.log(header);
 // Div for everything 
 
