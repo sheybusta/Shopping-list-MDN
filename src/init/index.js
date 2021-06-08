@@ -1,7 +1,4 @@
-
 import "../listeners/listener.js"
-
-
 
 // Div for everything 
 
@@ -35,7 +32,6 @@ buttonAdd.setAttribute('id', 'btn-add');
 buttonAdd.setAttribute('class', 'btn');
 buttonAdd.textContent = "add item";
 divInput.appendChild(buttonAdd);
-
 
 
 
