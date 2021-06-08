@@ -1,6 +1,5 @@
 
 
-// export const addbutton = () => {
-// if (!btn-add === null);
-// return;
-// }
+export const something = (event) => {
+console.log(event);
+}

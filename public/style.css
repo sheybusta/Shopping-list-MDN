@@ -1,0 +1,31 @@
+html {
+    padding: 0;
+    margin: 0;
+    background-image: linear-gradient(to right, #c6ffdd, #fbd786, #f7797d);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items:center;
+    justify-content: center;
+}
+
+.container {
+   border: 2px solid blue;
+   /* height: 50em; */
+   display: flex;
+   flex-direction: row;
+   align-content: center;
+   justify-content: center;
+   margin-top: 30px;
+   width: 70vh;
+   height: 100vh;
+   /* padding-top: 50px; */
+   
+}
+
+.input-container {
+   border: 2px solid lawngreen;
+}
