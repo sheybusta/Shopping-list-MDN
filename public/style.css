@@ -16,7 +16,7 @@ body {
    border: 2px solid blue;
    /* height: 50em; */
    display: flex;
-   flex-direction: row;
+   flex-direction: column;
    align-content: center;
    justify-content: center;
    margin-top: 30px;
@@ -29,3 +29,4 @@ body {
 .input-container {
    border: 2px solid lawngreen;
 }
+
