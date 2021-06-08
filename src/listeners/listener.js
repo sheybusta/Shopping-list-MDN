@@ -1,9 +1,6 @@
+document.getElementById('btn-add').addEventListener('click', (event) => console.log (event));
 
-// import {addbutton} from '../handlers/handlers.js'
+// const buttonAdd = document.createElement('button');
 
-// document.getElementById('btn-add').addEventListener('click', addbutton);
+// buttonAdd.addEventListener('click', something);
 
-const buttonAdd = document.createElement('button');
-
-buttonAdd.addEventListener('click', (e) => console.log('hey'));
-console.log(buttonAdd);

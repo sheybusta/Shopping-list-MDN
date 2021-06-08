@@ -1,9 +1,9 @@
-import "../listeners/listener.js"
 
 // Div for everything 
 
 const divContainer = document.createElement('div');
 divContainer.setAttribute('id', 'div-container');
+divContainer.setAttribute('class', 'container')
 console.log(divContainer);
 
 // add div container inside the body in html
@@ -14,6 +14,7 @@ document.body.appendChild(divContainer);
 
 const divInput = document.createElement('div');
 divInput.setAttribute('id', 'input-field');
+divInput.setAttribute('class', 'input-container')
 divContainer.appendChild(divInput);
 
 
@@ -33,5 +34,5 @@ buttonAdd.setAttribute('class', 'btn');
 buttonAdd.textContent = "add item";
 divInput.appendChild(buttonAdd);
 
-
+// create div to see the list 
 
