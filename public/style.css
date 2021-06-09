@@ -17,8 +17,8 @@ body {
     align-content: center;
     align-items:center;
     justify-content: center;
-      background: linear-gradient(to bottom, #dce35b, #45b649);
-     /* background-image: linear-gradient(to bottom, #c6ffdd, #fbd786, #f7797d); */
+      background: linear-gradient(to bottom, #dce35b, #45b649, #fbd786);
+     /* background-image: linear-gradient(to right, #f7797d, #c6ffdd, #fbd786); */
     /* background-image: linear-gradient(to bottom, #49592C #749D2E, #F7FBEF, #FFFBCE); */
 }
 
