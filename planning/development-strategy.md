@@ -13,7 +13,7 @@
   - [ ] button to add items <button>add items<button/>
   
   
-3. As an **user-list-maker** I want to delete items to my list.
+3. As an **user-list-maker** I want to delete items from my list.
   
   - [ ] button to delete <button>add items<button/>
    
@@ -27,6 +27,9 @@
 - [ ] css
 - [ ] accesibility
 
+6. As an **user-list-maker** I want to clean the list. 
+
+- [ ] add clean button. 
 
 
 
