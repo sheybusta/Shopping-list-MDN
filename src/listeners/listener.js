@@ -1,10 +1,15 @@
-import { addItemHandler } from '../handlers/handlers.js'
 
+import { addButton, sendButton, saveButton, cleanButton } from '../init/index.js'
+import { buttonControl } from '../handlers/handlers.js'
+// import { deleteItem } from '../handlers/handlers.js'
 
-document.getElementById('btn-add').addEventListener('click', addItemHandler);
-
+addButton.addEventListener('click', buttonControl);
 
 
 // const buttonAdd = document.createElement('button');
 
+sendButton.addEventListener('click', buttonControl);
 
+saveButton.addEventListener('click', buttonControl);
+
+cleanButton.addEventListener('click', buttonControl);

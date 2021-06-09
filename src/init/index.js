@@ -20,7 +20,7 @@ document.body.appendChild(divContainer);
 
 // create div for input 
 
-const divInput = document.createElement('div');
+const divInput = document.createElement('form');
 divInput.setAttribute('id', 'input-field');
 divInput.setAttribute('class', 'input-container')
 divContainer.appendChild(divInput);
@@ -30,17 +30,20 @@ divContainer.appendChild(divInput);
 
 const inputField = document.createElement('input');
 inputField.setAttribute('type', 'text');
+inputField.setAttribute('name', 'text');
+inputField.setAttribute('id', 'input-field')
 divInput.appendChild(inputField);
 
 
 
 // create add button
 
-const buttonAdd = document.createElement('button');
-buttonAdd.setAttribute('id', 'btn-add');
-buttonAdd.setAttribute('class', 'btn');
-buttonAdd.textContent = "add item";
-divInput.appendChild(buttonAdd);
+const addButton = document.createElement('button');
+addButton.setAttribute('id', 'add-button');
+addButton.setAttribute('class', 'add-btn');
+addButton.setAttribute('value', 'add');
+addButton.textContent = 'ADD';
+divInput.appendChild(addButton);
 
 // create div to see the display list
 
@@ -53,7 +56,32 @@ const theList = document.createElement('ul');
 theList.setAttribute('id', 'the-list');
 divList.appendChild(theList);
 
+// create send button
+const sendButton = document.createElement('button');
+sendButton.setAttribute('id', 'send-button');
+sendButton.setAttribute('class', 'send-btn');
+sendButton.setAttribute('value', 'send');
+sendButton.textContent = 'SEND';
+divInput.appendChild(sendButton);
+
+// create save button
+
+const saveButton = document.createElement('button');
+saveButton.setAttribute('id', 'save-button');
+saveButton.setAttribute('class', 'save-btn');
+saveButton.setAttribute('value', 'save');
+saveButton.textContent = 'SAVE';
+divInput.appendChild(saveButton);
+
+// create clean button 
+
+const cleanButton = document.createElement('button');
+cleanButton.setAttribute('id', 'clean-button');
+cleanButton.setAttribute('class', 'clean-btn');
+cleanButton.setAttribute('value', 'clean');
+cleanButton.textContent = 'CLEAN';
+divInput.appendChild(cleanButton);
 
 export {
-theList, inputField
+theList, inputField, addButton, sendButton, saveButton, cleanButton
 };

@@ -27,6 +27,9 @@
 - [ ] css
 - [ ] accesibility
 
+6. As an **user-list-maker** I want to clean the list. 
+
+- [ ] add clean button. 
 
 
 

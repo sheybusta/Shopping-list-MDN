@@ -5,6 +5,7 @@
 3. As an **user-list-maker** I want to delete items to my list.
 4. As an **user-list-maker** I want to check items as "bought".
 5. As a **developer** I want to sort the items.
+6. As an **user-list-maker** I want to clean the list. 
 
 
 
