@@ -1,8 +1,6 @@
 * {
     padding: 0;
     margin: 0;
-    /* background-image: linear-gradient(to bottom, #c6ffdd, #fbd786, #f7797d); */
-    /* background-image: linear-gradient(to bottom, #49592C #749D2E, #F7FBEF, #FFFBCE); */
     
 }
 h1 {
@@ -19,28 +17,28 @@ body {
     align-content: center;
     align-items:center;
     justify-content: center;
-      background: linear-gradient(to bottom, #dce35b, #45b649, #fbd786);
-     /* background-image: linear-gradient(to right, #f7797d, #c6ffdd, #fbd786); */
-    /* background-image: linear-gradient(to bottom, #49592C #749D2E, #F7FBEF, #FFFBCE); */
     font-family: 'Baloo Tammudu 2', cursive;
+    background: linear-gradient(to bottom, #dce35b, #45b649, #fbd786);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 
 .container {
-   border: 2px solid blue;
-   /* height: 50em; */
+   /* border: 2px solid blue; */
    display: flex;
-   flex-direction: column;
    align-content: center;
    justify-content: space-between;
-   margin-top: 30px;
+   flex-direction: column;
    width: 110vh;
-   height: 100vh;
+   /* height: 50em;
+   margin-top: 30px;
+   height: 80vh;  */
    
 }
 
 .input-container {
-   border: 2px solid orangered;
+   /* border: 2px solid orangered; */
    display: flex;
    flex-direction: row;
    align-content: center;
@@ -69,19 +67,30 @@ body {
     /* padding: .5rem; */
     /* height: 5vh; */
     border-radius: 4px;
+    padding: 7px 50px;
+    
 }
 
 button {
     background-color: #FAF1CA;
     font-family: 'Baloo Tammudu 2', cursive;
     border: none;
-    padding: 7px 24px;
+    padding: 7px 15px;
     text-align: center;
     border-radius: 4px;
-    
+    /* transition: all 500ms ease; */
 
 }
 
 .fa-trash {
     pointer-events: none;
 }
+
+.send-active {
+    background-color: rgb(255, 137, 58);    
+}
+
+.send-active:hover {
+    background-color: #d8b34e
+}
+
