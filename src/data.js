@@ -1,5 +1,5 @@
 import {theList, inputField, sendButton } from '../src/init/index.js'
-import {deleteItem} from '../src/handlers/handlers.js'
+import {checkedItem, deleteItem} from '../src/handlers/handlers.js'
 
 
 const createListItem = () => {
@@ -36,7 +36,7 @@ deleteButton.classList.add('delete-button');
 itemDiv.appendChild(deleteButton);
 //listener for delete button  
 deleteButton.addEventListener('click', deleteItem);
-checkedButton.addEventListener('click', (e) => console.log ('e'));
+checkedButton.addEventListener('click', checkedItem);
 
 
 } 
