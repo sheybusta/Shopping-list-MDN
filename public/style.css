@@ -30,7 +30,7 @@ body {
    align-content: center;
    justify-content: space-between;
    flex-direction: column;
-   width: 110vh;
+   width: 130vh;
    /* height: 50em;
    margin-top: 30px;
    height: 80vh;  */
@@ -43,8 +43,9 @@ body {
    flex-direction: row;
    align-content: center;
    justify-content: space-between;
-   padding: 2rem;
-   margin: 2.5rem;
+   /* padding: 2rem; */
+   margin: 3rem;
+   width: 100vh ;
 
 }
 
@@ -64,6 +65,7 @@ body {
 
 #the-list {
     list-style-type: none;
+    text-align: center;
 }
 
 #input-field {
