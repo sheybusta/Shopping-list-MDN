@@ -54,7 +54,19 @@ sendButton.classList.add('send-active'); // add a new class but doesn't delete t
 
 }
 
-export {createListItem, sendUrl}; 
+// debugger;
+//delete all items
+
+const deleteAll = () => {
+//     const itemsToClean = document.querySelectorAll("li");
+//     theList.remove(itemsToClean);
+// // console.log("hey");
+//  ///// ELIMINAR TODOS LOS DOCUMENTOS ///// 
+        theList.innerHTML = ''; 
+ 
+}
+
+export {createListItem, sendUrl, deleteAll}; 
 
 
 // To store in local storage

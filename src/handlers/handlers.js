@@ -1,4 +1,4 @@
-import { createListItem, sendUrl } from '../data.js'
+import { createListItem, sendUrl, deleteAll } from '../data.js'
 
 // control list through buttons 
 
@@ -30,7 +30,6 @@ if (action === 'save') {
 //clean all items from shopping list 
 
 if (action === 'clean') {
-
   deleteAll();
 
 }
@@ -60,13 +59,9 @@ const checkedItem =(event) => {
     }
 }
 
-const deleteAll = (event) => {
 
- ///// ELIMINAR TODOS LOS DOCUMENTOS ///// 
- 
-}
 
 // 
 
 
-export { buttonControl, deleteItem, checkedItem};
+export {buttonControl, deleteItem, checkedItem};
