@@ -1,7 +1,8 @@
 const shoppingList = () => {
     const container = document.createElement("div");
-    container.className = "body";
+    container.className = "list-container";
     container.innerHTML = "";
+    container.appendChild(controlPanel());
 
     return container;
 }

@@ -1,22 +1,22 @@
-import {theList, inputField, sendButton } from './init/index.js'
-import {checkedItem, deleteItem} from './handlers/handlers.js'
+// import {theList, inputField, sendButton } from './init/index.js'
+// import {checkedItem, deleteItem} from './handlers/handlers.js'
 
 
-const createListItem = () => {
+// const createListItem = () => {
 
-// Div for each item
+// // Div for each item
 
-const itemDiv = document.createElement('div');
-itemDiv.classList.add('item');
-theList.appendChild(itemDiv);
+// const itemDiv = document.createElement('div');
+// itemDiv.classList.add('item');
+// theList.appendChild(itemDiv);
 
 //li for each item
 
-const liItem = document.createElement('li');
-liItem.innerText = inputField.value;
-liItem.classList.add('li-item');
-inputField.value = '';
-itemDiv.appendChild(liItem);
+// const liItem = document.createElement('li');
+// liItem.innerText = inputField.value;
+// liItem.classList.add('li-item');
+// inputField.value = '';
+// itemDiv.appendChild(liItem);
 
 // checked button
 
@@ -39,34 +39,34 @@ itemDiv.appendChild(liItem);
 // checkedButton.addEventListener('click', checkedItem);
 
 
-} 
+// } 
 
-const sendUrl = () => {
+// const sendUrl = () => {
 
-let inputcopy = document.body.appendChild(document.createElement("input"));
-inputcopy.value = window.location.href;
-inputcopy.focus();
-inputcopy.select();
-document.execCommand('copy');
-inputcopy.parentNode.removeChild(inputcopy);
-// sendButton.setAttribute('class', 'send-active'); // re-write class for sendButton, not good idea
-sendButton.classList.add('send-active'); // add a new class but doesn't delete the old one. 
+// let inputcopy = document.body.appendChild(document.createElement("input"));
+// inputcopy.value = window.location.href;
+// inputcopy.focus();
+// inputcopy.select();
+// document.execCommand('copy');
+// inputcopy.parentNode.removeChild(inputcopy);
+// // sendButton.setAttribute('class', 'send-active'); // re-write class for sendButton, not good idea
+// sendButton.classList.add('send-active'); // add a new class but doesn't delete the old one. 
 
-}
+// }
 
 // debugger;
 //delete all items
 
-const deleteAll = () => {
+// const deleteAll = () => {
 //     const itemsToClean = document.querySelectorAll("li");
 //     theList.remove(itemsToClean);
 // // console.log("hey");
 //  ///// ELIMINAR TODOS LOS DOCUMENTOS ///// 
-        theList.innerHTML = ''; 
+        // theList.innerHTML = ''; 
  
-}
+// }
 
-export {createListItem, sendUrl, deleteAll}; 
+// export {createListItem, sendUrl, deleteAll}; 
 
 
 // To store in local storage

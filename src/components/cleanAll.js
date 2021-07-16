@@ -1,6 +1,6 @@
 const cleanAll = () => {
 
-cleanButton = document.createElement('button');
+const cleanButton = document.createElement('button');
 cleanButton.setAttribute('id', 'clean-button');
 cleanButton.setAttribute('class', 'clean-btn');
 cleanButton.setAttribute('value', 'clean');
