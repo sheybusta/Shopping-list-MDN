@@ -20,23 +20,23 @@ itemDiv.appendChild(liItem);
 
 // checked button
 
-const checkedButton = document.createElement('button');
-checkedButton.innerHTML = '<i class = "fas fa-check"></i>';
-checkedButton.classList.add('checked-button');
-itemDiv.appendChild(checkedButton);
+// const checkedButton = document.createElement('button');
+// checkedButton.innerHTML = '<i class = "fas fa-check"></i>';
+// checkedButton.classList.add('checked-button');
+// itemDiv.appendChild(checkedButton);
 
 // checkedButton.addEventListener('click', (e) console.log => ('e'));
 
 //delete button 
 
-const deleteButton = document.createElement('button');
-deleteButton.innerHTML = '<i class = "fas fa-trash"></i>';
-// deleteButton.setAttribute('id', 'delete-button');
-deleteButton.classList.add('delete-button');
-itemDiv.appendChild(deleteButton);
-//listener for delete button  
-deleteButton.addEventListener('click', deleteItem);
-checkedButton.addEventListener('click', checkedItem);
+// const deleteButton = document.createElement('button');
+// deleteButton.innerHTML = '<i class = "fas fa-trash"></i>';
+// // deleteButton.setAttribute('id', 'delete-button');
+// deleteButton.classList.add('delete-button');
+// itemDiv.appendChild(deleteButton);
+// //listener for delete button  
+// deleteButton.addEventListener('click', deleteItem);
+// checkedButton.addEventListener('click', checkedItem);
 
 
 } 

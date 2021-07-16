@@ -1,10 +1,10 @@
 const schema = {
-    title: "list item",
+    title: "item to buy",
     type: "object",
     properties: {
       item: {
         type: "string",
-        description: "something user plans to do",
+        description: "something user want to buy",
       },
       done: {
         type: "boolean",

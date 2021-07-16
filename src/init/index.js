@@ -28,22 +28,22 @@ divContainer.appendChild(divInput);
 
 // create input field inside div
 
-const inputField = document.createElement('input');
-inputField.setAttribute('type', 'text');
-inputField.setAttribute('name', 'text');
-inputField.setAttribute('id', 'input-field')
-divInput.appendChild(inputField);
+// const inputField = document.createElement('input');
+// inputField.setAttribute('type', 'text');
+// inputField.setAttribute('name', 'text');
+// inputField.setAttribute('id', 'input-field')
+// divInput.appendChild(inputField);
 
 
 
 // create add button
 
-const addButton = document.createElement('button');
-addButton.setAttribute('id', 'add-button');
-addButton.setAttribute('class', 'add-btn');
-addButton.setAttribute('value', 'add');
-addButton.textContent = 'ADD';
-divInput.appendChild(addButton);
+// const addButton = document.createElement('button');
+// addButton.setAttribute('id', 'add-button');
+// addButton.setAttribute('class', 'add-btn');
+// addButton.setAttribute('value', 'add');
+// addButton.textContent = 'ADD';
+// divInput.appendChild(addButton);
 
 // create div to see the display list
 
@@ -57,31 +57,31 @@ theList.setAttribute('id', 'the-list');
 divList.appendChild(theList);
 
 // create send button
-const sendButton = document.createElement('button');
-sendButton.setAttribute('id', 'send-button');
-sendButton.setAttribute('class', 'send-btn');
-sendButton.setAttribute('value', 'send');
-sendButton.textContent = 'SEND';
-divInput.appendChild(sendButton);
+// const sendButton = document.createElement('button');
+// sendButton.setAttribute('id', 'send-button');
+// sendButton.setAttribute('class', 'send-btn');
+// sendButton.setAttribute('value', 'send');
+// sendButton.textContent = 'SEND';
+// divInput.appendChild(sendButton);
 
 // create save button
 
-const saveButton = document.createElement('button');
-saveButton.setAttribute('id', 'save-button');
-saveButton.setAttribute('class', 'save-btn');
-saveButton.setAttribute('value', 'save');
-saveButton.textContent = 'SAVE';
-divInput.appendChild(saveButton);
+// const saveButton = document.createElement('button');
+// saveButton.setAttribute('id', 'save-button');
+// saveButton.setAttribute('class', 'save-btn');
+// saveButton.setAttribute('value', 'save');
+// saveButton.textContent = 'SAVE';
+// divInput.appendChild(saveButton);
 
 // create clean button 
 
-const cleanButton = document.createElement('button');
-cleanButton.setAttribute('id', 'clean-button');
-cleanButton.setAttribute('class', 'clean-btn');
-cleanButton.setAttribute('value', 'clean');
-cleanButton.textContent = 'CLEAN';
-divInput.appendChild(cleanButton);
+// const cleanButton = document.createElement('button');
+// cleanButton.setAttribute('id', 'clean-button');
+// cleanButton.setAttribute('class', 'clean-btn');
+// cleanButton.setAttribute('value', 'clean');
+// cleanButton.textContent = 'CLEAN';
+// divInput.appendChild(cleanButton);
 
 export {
-theList, inputField, addButton, sendButton, saveButton, cleanButton
+theList, inputField, button as addButton, sendButton, saveButton, cleanButton
 };

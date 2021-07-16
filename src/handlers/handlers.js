@@ -1,4 +1,4 @@
-import { createListItem, sendUrl, deleteAll } from '../data.js'
+import { createListItem, sendUrl, deleteAll } from '../data1.js'
 
 // control list through buttons 
 
