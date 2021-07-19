@@ -1,15 +1,25 @@
+import { shoppingList } from "../components/shoppingList.js";
 import { handleAddItem } from "./handleAddItem.js";
+import { state } from "../data.js"
 
-const buttonControl = (event) => {
+export const buttonControl = (event) => {
 
 const action = event.target.value;
 event.preventDefault();
 
 if (action === "add") {
     handleAddItem();
-
+    const reRenderList = () => {
+   
+    const list = document.getElementById("shopping-list");
+    list.innerHTML = "";
+    shoppingList(state.items);
+    console.log(state);
+    
 };
-
+    reRenderList();
+    }
+    
 if (action === "copy-url") {
 console.log("copy url");
 };
@@ -20,8 +30,6 @@ console.log("clean")
 };
 
 };
-
-export { buttonControl };
 
 // //function to delete item from shopping list
 

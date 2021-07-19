@@ -6,18 +6,21 @@ import { buttonControl } from "../handlers/handleButtonControl.js";
 
 const controlPanel = () => {
     const section = document.getElementById("control-panel");
-    const div = document.createElement("div");
-    section.appendChild(div);
-    // section.className = "section-control";
-    console.log(section);
-    //append all buttons and input field 
-    section.appendChild(userInput());
-    section.appendChild(addButton());
-    section.appendChild(copyUrl());
-    section.appendChild(cleanAll());
-    // // listener for buttons control 
-    section.addEventListener("click", buttonControl);
-    return div;
+    const divControlPanel = document.createElement("div");
+    divControlPanel.id = "buttons-control"
+    section.appendChild(divControlPanel);
+
+    // append buttons and input field 
+
+    divControlPanel.appendChild(userInput());
+    divControlPanel.appendChild(addButton());
+    divControlPanel.appendChild(copyUrl());
+    divControlPanel.appendChild(cleanAll());
+
+    // listener for buttons control 
+
+    divControlPanel.addEventListener("click", buttonControl);
+    return divControlPanel;
 };
 
 export { controlPanel };
