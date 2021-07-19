@@ -2,29 +2,22 @@ import { addButton } from "./addButton.js";
 import { cleanAll } from "./cleanAll.js";
 import { copyUrl } from "./copyUrl.js";
 import { userInput } from "./userInput.js";
+import { buttonControl } from "../handlers/handleButtonControl.js";
 
 const controlPanel = () => {
-    const section = document.createElement("section");
-    section.className = "control-panel";
+    const section = document.getElementById("control-panel");
+    const div = document.createElement("div");
+    section.appendChild(div);
+    // section.className = "section-control";
+    console.log(section);
     //append all buttons and input field 
     section.appendChild(userInput());
     section.appendChild(addButton());
     section.appendChild(copyUrl());
     section.appendChild(cleanAll());
-    
-    return section;
-//     export const home = () => {
-//   const container = document.createElement('div');
-//   container.className = 'body';
-
-//   container.appendChild(instructions());
-
-//   container.appendChild(numberOfQu());
-
-//   container.appendChild(startQuizButton());
-
-//   return container;
-// };
+    // // listener for buttons control 
+    section.addEventListener("click", buttonControl);
+    return div;
 };
 
 export { controlPanel };

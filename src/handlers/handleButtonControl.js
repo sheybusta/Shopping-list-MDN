@@ -1,40 +1,27 @@
-// import { createListItem, sendUrl, deleteAll } from '../data1.js'
+import { handleAddItem } from "./handleAddItem.js";
 
-// // control list through buttons 
+const buttonControl = (event) => {
 
-// const buttonControl = (event) => {
+const action = event.target.value;
+event.preventDefault();
 
+if (action === "add") {
+    handleAddItem();
 
-//     event.preventDefault();
+};
 
-// const text = event.target.form.text.value; // input field
-// const action = event.target.value;
+if (action === "copy-url") {
+console.log("copy url");
+};
 
-// // add item to the list 
+if (action === 'clean') {
+console.log("clean")
 
-// if (action === "add") {
-//   createListItem(); 
+};
 
-// } 
-// // copy shopping list URL 
-// if (action === 'send') {
-//   sendUrl();
-// }
-// // save? where we can save? local storage?
+};
 
-// if (action === 'save') {
-
-//     console.log('save');
-// }
-
-// //clean all items from shopping list 
-
-// if (action === 'clean') {
-//   deleteAll();
-
-// }
-
-// }
+export { buttonControl };
 
 // //function to delete item from shopping list
 
