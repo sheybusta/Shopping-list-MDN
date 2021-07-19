@@ -1,10 +1,10 @@
-const userInput = () => {
-const inputField = document.createElement('input');
-inputField.setAttribute('type', 'text');
-inputField.setAttribute('name', 'text');
+export const userInput = () => {
+const divUserInput = document.createElement("div");
+const inputField = document.createElement("input");
+inputField.setAttribute("type", "text");
+inputField.setAttribute("name", "text");
 inputField.id = "input-field"; 
-// divInput.appendChild(inputField);
-return inputField; 
-};
+divUserInput.appendChild(inputField);
 
-export { userInput };
+return divUserInput; 
+};

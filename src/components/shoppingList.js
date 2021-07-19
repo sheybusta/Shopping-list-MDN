@@ -1,3 +1,6 @@
+import { deleteButton } from "./deleteButton.js";
+import { checkButton } from "./checkButton.js";
+
 export const shoppingList = ( data ) => {
     const section = document.getElementById("shopping-list");
     const listOfItems = document.createElement("ul");
@@ -11,6 +14,8 @@ export const shoppingList = ( data ) => {
         const itemDiv = document.createElement("div");
         itemEl.innerText = data[data.indexOf(item)].item;
         itemEl.appendChild(itemDiv);
+        itemDiv.appendChild(deleteButton());
+        itemDiv.appendChild(checkButton());
         listOfItems.appendChild(itemEl);
     });
 

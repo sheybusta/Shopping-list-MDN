@@ -4,23 +4,21 @@ import { copyUrl } from "./copyUrl.js";
 import { userInput } from "./userInput.js";
 import { buttonControl } from "../handlers/handleButtonControl.js";
 
-const controlPanel = () => {
+export const controlPanel = () => {
     const section = document.getElementById("control-panel");
-    const divControlPanel = document.createElement("div");
-    divControlPanel.id = "buttons-control"
-    section.appendChild(divControlPanel);
+    const formControlPanel = document.createElement("form");
+    formControlPanel.id = "buttons-control"
+    section.appendChild(formControlPanel);
 
     // append buttons and input field 
 
-    divControlPanel.appendChild(userInput());
-    divControlPanel.appendChild(addButton());
-    divControlPanel.appendChild(copyUrl());
-    divControlPanel.appendChild(cleanAll());
+    formControlPanel.appendChild(userInput());
+    formControlPanel.appendChild(addButton());
+    formControlPanel.appendChild(copyUrl());
+    formControlPanel.appendChild(cleanAll());
 
     // listener for buttons control 
 
-    divControlPanel.addEventListener("click", buttonControl);
-    return divControlPanel;
+    formControlPanel.addEventListener("click", buttonControl);
+    return formControlPanel;
 };
-
-export { controlPanel };
