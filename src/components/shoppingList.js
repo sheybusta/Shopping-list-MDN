@@ -7,9 +7,10 @@ export const shoppingList = ( data ) => {
     listOfItems.setAttribute("class", "list-items");
     section.appendChild(listOfItems);
       
-    data.forEach (item => {
+    data.forEach (item => { //data is parameter => state.items
         const itemEl = document.createElement("li");
         itemEl.setAttribute("class", "item");
+        itemEl.id = "item-li";
         const itemDiv = document.createElement("div");
         itemDiv.dataset.index = data.indexOf(item);
         itemDiv.innerText = data[data.indexOf(item)].item;
@@ -17,7 +18,17 @@ export const shoppingList = ( data ) => {
         itemDiv.appendChild(deleteButton());
         itemDiv.appendChild(checkButton());
         listOfItems.appendChild(itemEl);
+
+        if(item.done === true) {
+            itemEl.classList.add('completed');
+        } else {
+            itemEl.classList.remove('completed')
+        }
     });
+    return listOfItems;
+};
+
+// LOOP FOR 
 
     // for (const item of data) {
     //  const itemEl = document.createElement("li");
@@ -28,7 +39,3 @@ export const shoppingList = ( data ) => {
     //     // console.log(state);
     // }
     
-
-    return listOfItems;
-};
-
