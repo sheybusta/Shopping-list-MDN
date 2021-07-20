@@ -70,19 +70,22 @@ body {
 
 #input-field {
     border: none;
-    /* padding: .5rem; */
-    /* height: 5vh; */
-    border-radius: 4px;
-    padding: 7px 50px;
-    
+    padding: 0.5rem;
+    /*height: 5vh;
+    */border-radius: 4px;
+    /* padding: 7px 50px; */
+    margin: 1rem;
 }
 
 button {
     background-color: #FAF1CA;
     font-family: 'Baloo Tammudu 2', cursive;
     border: none;
-    padding: 7px 15px;
+    /* padding: 7px 15px; */
+    padding: 0.5rem;
+    margin: 1rem;
     text-align: center;
+    cursor: pointer;
     /* border-radius: 4px; */
     /* transition: all 500ms ease; */
 
