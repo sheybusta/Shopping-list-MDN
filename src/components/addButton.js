@@ -1,4 +1,4 @@
-const addButton = () => {
+export const addButton = () => {
 
 const button = document.createElement("button");
 button.setAttribute("id", "add-button");
@@ -9,4 +9,3 @@ button.textContent = "ADD";
 return button;
 };
 
-export { addButton };

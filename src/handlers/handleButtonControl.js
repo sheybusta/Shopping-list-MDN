@@ -1,6 +1,8 @@
-import { shoppingList } from "../components/shoppingList.js";
+// import { shoppingList } from "../components/shoppingList.js";
 import { handleAddItem } from "./handleAddItem.js";
-import { state } from "../data.js"
+import { reRenderList } from "./handlereRender.js";
+import { deleteItem } from "./handleDeleteItem.js";
+// import { state } from "../data.js"
 
 export const buttonControl = (event) => {
 
@@ -9,14 +11,6 @@ event.preventDefault();
 
 if (action === "add") {
     handleAddItem();
-    const reRenderList = () => {
-   
-    const list = document.getElementById("shopping-list");
-    list.innerHTML = "";
-    shoppingList(state.items);
-    console.log(state);
-    
-};
     reRenderList();
     }
     
@@ -29,6 +23,10 @@ console.log("clean")
 
 };
 
+// if (action === 'delete') {
+//     deleteItem();
+//     // reRenderList();
+// }
 };
 
 // //function to delete item from shopping list

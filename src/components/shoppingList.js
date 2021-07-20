@@ -10,9 +10,9 @@ export const shoppingList = ( data ) => {
     data.forEach (item => {
         const itemEl = document.createElement("li");
         itemEl.setAttribute("class", "item");
-        itemEl.dataset.index = data.indexOf(item); 
         const itemDiv = document.createElement("div");
-        itemEl.innerText = data[data.indexOf(item)].item;
+        itemDiv.dataset.index = data.indexOf(item);
+        itemDiv.innerText = data[data.indexOf(item)].item;
         itemEl.appendChild(itemDiv);
         itemDiv.appendChild(deleteButton());
         itemDiv.appendChild(checkButton());
