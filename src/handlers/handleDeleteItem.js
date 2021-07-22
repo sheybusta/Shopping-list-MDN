@@ -5,5 +5,4 @@ export const deleteItem = (e) =>  {
    const indexData = targetToDelete.dataset.index; 
    state.items.splice(indexData,1);
    reRenderList();
-   console.log(state);
 };

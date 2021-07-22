@@ -2,6 +2,7 @@
 import {  handleCopyUrl } from "../handlers/handleCopyUrl.js";
 import { handleAddItem } from "./handleAddItem.js";
 import { reRenderList } from "./handlereRender.js";
+import { handleSortBox } from "./handleSortBox.js";
 // import { state } from "../data.js"
 
 export const buttonControl = (event) => {
@@ -20,14 +21,19 @@ if (action === "add") {
     }
     
 if (action === "copy-url") {
-    debugger;
     handleCopyUrl();
     console.log("copy url");
 };
 
-if (action === 'clean') {
-console.log("clean")
+if (action === "clean") {
+console.log("clean");
 };
+
+if (action === "sort") {
+    handleSortBox();
+console.log("sort works");
+
+}
 
 };
 

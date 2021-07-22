@@ -1,5 +1,5 @@
 export const handleCopyUrl = () => {
-let inputcopy = document.body.appendChild(document.createElement("input"));
+const inputcopy = document.body.appendChild(document.createElement("input"));
 inputcopy.value = window.location.href;
 inputcopy.focus();
 inputcopy.select();
