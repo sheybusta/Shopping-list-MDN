@@ -3,6 +3,7 @@ import { cleanAll } from "./cleanAll.js";
 import { copyUrl } from "./copyUrl.js";
 import { userInput } from "./userInput.js";
 import { buttonControl } from "../handlers/handleControlButtons.js";
+import { sortButton } from "./sortButton.js"
 
 export const controlPanel = () => {
     const section = document.getElementById("control-panel");
@@ -16,6 +17,7 @@ export const controlPanel = () => {
     formControlPanel.appendChild(addButton());
     formControlPanel.appendChild(copyUrl());
     formControlPanel.appendChild(cleanAll());
+    formControlPanel.appendChild(sortButton());
 
     // listener for buttons control 
 
