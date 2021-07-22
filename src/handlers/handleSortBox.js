@@ -1,8 +1,8 @@
-export const handleSortBox = () => {
-const targetBox = document.getElementById("modal-box");
-targetBox.classList.add("pop-up-modal");
-targetBox.appendChild(content);
-}
+// export const handleSortBox = () => {
+// const targetBox = document.getElementById("modal-box");
+// targetBox.classList.add("pop-up-modal");
+// targetBox.appendChild(content);
+// }
 
 // const targetCheck = e.currentTarget.parentElement; 
 //     console.log(e.currentTarget.parentElement);

@@ -2,7 +2,7 @@
 import {  handleCopyUrl } from "../handlers/handleCopyUrl.js";
 import { handleAddItem } from "./handleAddItem.js";
 import { reRenderList } from "./handlereRender.js";
-import { handleSortBox } from "./handleSortBox.js";
+import { handleSortButton } from "./handleSortButton.js";
 // import { state } from "../data.js"
 
 export const buttonControl = (event) => {
@@ -30,8 +30,8 @@ console.log("clean");
 };
 
 if (action === "sort") {
-    handleSortBox();
-console.log("sort works");
+    handleSortButton();
+    console.log("sort works");
 
 }
 

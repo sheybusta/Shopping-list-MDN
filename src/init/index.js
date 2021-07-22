@@ -21,6 +21,7 @@ document.getElementById("input-field").select();
 
 const modalBox = document.createElement("div"); 
 modalBox.id = "modal-box";
+modalBox.className = "none";
 body.appendChild(modalBox);
 modalBox.appendChild(sortList());
 

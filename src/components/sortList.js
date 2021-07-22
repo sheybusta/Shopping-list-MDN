@@ -2,11 +2,19 @@ export const  sortList = () => {
     const sortEl = document.createElement("div");
     sortEl.id  = "sort-list";
     sortEl.classList = "sort-content";
-    const title = document.createElement("h1");
-    title.classList = "hidden";
-    title.innerText = "hello!";
-    sortEl.appendChild(title);
+    const div = document.createElement("div");
+    div.classList = "modal-content";
+    const titlee = document.createElement("h1");
+    titlee.innerText = "hello!";
+     sortEl.appendChild(div);
+   div.appendChild(titlee);
+    const span = document.createElement("span");
+    span.classList = "close";
+    span.innerHTML = "&times;";
+    div.appendChild(span);
 
+    // title.innerText = "hello!";
+    
     // sortEl.classList = "sort";
     return sortEl;
 };
