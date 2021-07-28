@@ -126,18 +126,7 @@ button {
 }
 
 .modal-container{
-
   display: none;
-
-}
-
-.modal-content {
-  background-color: #fefefe;
-  padding: 30px 50px;
-  border: 1px solid #888;
-  width: 600px;
-  max-width: 100%;  
-  text-align: center;
 }
 
 .modal-display {
@@ -148,11 +137,18 @@ button {
   padding-top: 100px; 
   width: 100vw;
   height: 100vh; 
-  /* z-index: 1; */
-  /* overflow: auto; */
   left: 0;
   top: 0;
   background-color: rgba(0, 0, 0, 0.3); 
+}
+
+.modal-content {
+  background-color: #fefefe;
+  padding: 30px 50px;
+  border: 1px solid #888;
+  width: 600px;
+  max-width: 100%;  
+  text-align: center;
 }
 
 .close {
