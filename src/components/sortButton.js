@@ -5,3 +5,4 @@ export const sortButton = () => {
     button.textContent = "SORT";
     return button;
 };
+

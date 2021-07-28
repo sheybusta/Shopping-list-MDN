@@ -6,8 +6,8 @@ export const  sortList = () => {
     div.classList = "modal-content";
     const titlee = document.createElement("h1");
     titlee.innerText = "hello!";
-     sortEl.appendChild(div);
-   div.appendChild(titlee);
+    sortEl.appendChild(div);
+    div.appendChild(titlee);
     const span = document.createElement("span");
     span.classList = "close";
     span.innerHTML = "&times;";
@@ -37,3 +37,7 @@ export const  sortList = () => {
     //         itemEl.classList.remove('completed')
     //     }
     // });
+
+
+    https://www.youtube.com/watch?v=XH5OW46yO8I
+    
