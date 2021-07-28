@@ -1,15 +1,33 @@
-export const  sortList = () => {
-    const sortEl = document.createElement("div");
-    sortEl.id  = "sort-list";
-    sortEl.classList = "sort-content";
-    const title = document.createElement("h1");
-    title.classList = "hidden";
-    title.innerText = "hello!";
-    sortEl.appendChild(title);
+import { handleModalHide } from "../handlers/handleModalHide.js";
 
-    // sortEl.classList = "sort";
-    return sortEl;
-};
+const sort = [ 
+'Unmark items', 'a-z', 'z-a'
+]
+
+export const  sortList = () => {
+    const div = document.createElement("div");
+    div.classList = "modal-content";
+    const button = document.createElement("button");
+    button.addEventListener("click", handleModalHide);
+    button.classList = "close";
+    button.innerText = "close";
+    div.appendChild(button);
+    // create ul 
+    // loop to get li from sort 
+    const ul = document.createElement("ul");
+    div.appendChild(ul);
+
+
+    for (let i = 0; i<sort.length; i++) {
+        const li = document.createElement("li");    
+        li.setAttribute("value", sort[i]);
+        li.innerText = sort[i];
+
+        ul.appendChild(li);
+    }
+
+    return div;
+}; 
 
     // data.forEach (item => { //data is parameter => state.items
     //     const itemEl = document.createElement("li");
@@ -29,3 +47,5 @@ export const  sortList = () => {
     //         itemEl.classList.remove('completed')
     //     }
     // });
+
+    
